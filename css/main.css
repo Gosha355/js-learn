@@ -1,0 +1,70 @@
+.personal-table__cell {
+    border: 1px solid #dddddd;
+	padding: 5px;
+}
+.personal-table {
+    width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #dddddd;
+	border-collapse: collapse; 
+
+}
+.personal-table__row, .personal-table__head {
+	padding: 5px;
+	display: table-row;
+    border-color: inherit;
+	vertical-align: middle;
+}
+.personal-table__head {
+	background: #efefef;
+	font-weight: bold;
+	border: 1px solid #dddddd;
+}
+.modal__data {
+	display: none;
+	position: absolute;
+	background-color: #efefef;
+	top: 150px;
+	right: 8px;
+	left: 8px;
+	border-radius: 15px;
+	border: 2px solid black;
+	padding: 10px;
+	z-index: 99999;
+}
+.modal__data_close {
+position: relative;
+left: 1350px;
+}
+.modal__data_search {
+	position: relative;
+}
+.modal__data_display {
+	display: none;
+}
+.modal__data_display::before {
+	content: '';
+	background: #000;
+	position: fixed; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	opacity: 0.7;
+	z-index: 9999;
+
+}
+#pagination li:hover, #pagination li.active {
+	cursor: pointer;
+	color: red;
+	border: 1px solid red;
+}
+#pagination {
+	display: flex;
+	list-style-type: none;
+}
+#pagination li {
+	margin-right: 5px;
+	padding: 10px;
+	border: 1px solid black;
+}
